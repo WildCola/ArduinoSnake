@@ -11,7 +11,7 @@ Create a game using an arduino uno and a led matrix.
   <summary><h3>Picture of setup</h3></summary>
 
 <br>
-![image](https://user-images.githubusercontent.com/79272874/208807578-ba9f45b1-4ed9-47a1-a849-5a9add7d7fed.png)
+![image](https://user-images.githubusercontent.com/79272874/208808307-28a111dc-6e11-4cb5-a107-8f146e354681.png)
 </details>
 
 <details>
