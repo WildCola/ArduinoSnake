@@ -126,6 +126,8 @@ byte aboutPage = 0;
 
 int congrats = 0;
 
+long startTime = 0;
+
 void setup() { 
   lcdBrightness = EEPROM.read(10);  
   analogWrite(backlight, (lcdBrightness * 16));
@@ -384,6 +386,8 @@ void selectSettings(){
 }
 
 void snake(){
+  if (gameOn == false)
+    startTime = millis();    
   lcd.setCursor(0, 0);
   lcd.write(currentName[0]);
   lcd.write(currentName[1]);
@@ -398,7 +402,7 @@ void snake(){
   
   lcd.setCursor(0, 1);
   lcd.print("Time played:");
-  long seconds = millis() / 1000;
+  long seconds = (millis()-startTime) / 1000;
   lcd.write(itoa(seconds, convertChar, 10));
   lcd.print("s  ");
   
